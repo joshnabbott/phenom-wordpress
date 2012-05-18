@@ -2,19 +2,19 @@
 config[:name] = "phenom"
 
 # The website for the theme
-config[:uri] = ""
+config[:uri] = "http://www.phenom.fm"
 
 # The author's name
-config[:author] = ""
+config[:author] = "Joshua Abbott"
 
 # The author's website
-config[:author_uri] = ""
+config[:author_uri] = "http://www.joshnabbott.com"
 
 # Description of the theme
-config[:description] = ""
+config[:description] = "Phenom"
 
 # Version number of the theme
-config[:version_number] = ""
+config[:version_number] = "0.0.1"
 
 # Name of the theme license
 config[:license_name] = ""
@@ -32,7 +32,7 @@ config[:comments] = ""
 # config[:compress_js] = false
 
 # Enable livereload
-# config[:livereload] = false
+config[:livereload] = true
 
 # Compass configuration can also go here.
 # See http://compass-style.org/help/tutorials/configuration-reference/ for some of the options
