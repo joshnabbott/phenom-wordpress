@@ -1,4 +1,7 @@
 source "https://rubygems.org"
 
-gem 'forge', :path => '/Users/n0mad/code/ruby/gems/forge/'
+group :development do
+  gem 'forge', :path => '/Users/n0mad/code/ruby/gems/forge/'
+  gem 'therubyracer'
+end
 

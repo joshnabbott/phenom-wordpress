@@ -1,7 +1,10 @@
-@import "bootstrap.min";
+@import "bootstrap";
+@import "_fonts";
 
 body {
   background: url('images/bg-body.png');
+  color: #fff;
+  font-family: $proxima-nova-regular;
 }
 
 header h1 a {
@@ -14,7 +17,7 @@ header h1 a {
   width: 350px;
 }
 
-header, #slideshow, #content-primary {
+header, #content-top, #content-primary, footer {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
   margin-bottom: 30px;
@@ -25,10 +28,16 @@ nav span {
   line-height: 45px;
 }
 
-#slideshow {
+#content-top {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
+
+  h3 {
+    color: #add946;
+    font-family: $proxima-nova-semibold;
+    text-transform: uppercase;
+  }
 }
 
 header {
@@ -48,4 +57,15 @@ header {
   -moz-border-radius-topright: 7px;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
+  margin-bottom: 0;
+
+  .well {
+    color: #333;
+  }
+
+  h3 {
+    color: #add946;
+    font-family: $proxima-nova-semibold;
+    text-transform: uppercase;
+  }
 }
