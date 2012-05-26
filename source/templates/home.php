@@ -32,11 +32,11 @@
         <div class="span8">
           <div class="row-fluid">
             <section class="span6 featured-tile">
-              <a href="#test"><img src="<?php bloginfo('template_url'); ?>/images/shop-mens.png" /></a>
+              <a href="" class="coming-soon"><img src="<?php bloginfo('template_url'); ?>/images/shop-mens.png" height="300" width="374" /></a>
             </section>
 
             <section class="span6 featured-tile">
-              <a href="" class="coming-soon"><img src="<?php bloginfo('template_url'); ?>/images/shop-womens.png" /></a>
+              <a href="" class="coming-soon"><img src="<?php bloginfo('template_url'); ?>/images/shop-womens.png" height="300" width="374" /></a>
             </section>
           </div>
 
