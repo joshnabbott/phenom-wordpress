@@ -1,12 +1,25 @@
 <?php get_header(); ?>
 
     <section id="content-top" class="row-fluid">
-      <h3>/About</h3>
+      <h3>/ <?php single_post_title(); ?> </h3>
     </section>
 
     <div id="content-primary" class="row-fluid">
       <section class="well span12">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <?php if ( have_posts() ) : ?>
+          <?php while ( have_posts() ) : the_post(); ?>
+            <div <?php post_class(); ?>>
+              <div class="row-fluid">
+                <?php if ( has_post_thumbnail() ) : ?>
+                  <div class="thumbnail pull-left"><?php the_post_thumbnail(); ?></div>
+                <?php endif; ?>
+                <?php the_content(); ?>
+                <?php wp_link_pages(); ?>
+              </div>
+            </div>
+          <?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
+          <?php comments_template( '', true ); ?>
+        <?php endif; ?>
       </section>
     </div><!-- end content-primary -->
 
