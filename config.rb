@@ -14,7 +14,7 @@ config[:author_uri] = "http://www.joshnabbott.com"
 config[:description] = "Phenom"
 
 # Version number of the theme
-config[:version_number] = "0.0.1"
+config[:version_number] = "1.0.0"
 
 # Name of the theme license
 config[:license_name] = ""
