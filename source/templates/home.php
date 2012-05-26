@@ -25,7 +25,7 @@
 
       <div class="row-fluid">
         <section class="span4">
-          <h3>/News</h3>
+          <h3>/ News</h3>
           <?php get_template_part('loop'); ?>
         </section>
 
@@ -41,7 +41,7 @@
           </div>
 
           <section class="row-fluid">
-            <h3>/Events</h3>
+            <h3>/ Events</h3>
             <ul class="table">
               <li>
                 <h3>This is going to be the event of the year!</h3>
