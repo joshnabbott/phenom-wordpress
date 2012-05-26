@@ -1,6 +1,17 @@
 <?php
 
 add_action( 'wp_enqueue_scripts', 'phenom_enqueue_scripts' );
+add_action( 'init', 'register_my_menus' );
+
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'primary-nav' => __( 'Primary Nav' ),
+      'footer-nav' => __( 'Footer Nav' )
+    )
+  );
+}
+
 
 if ( ! function_exists( 'phenom_enqueue_scripts' ) ) :
 

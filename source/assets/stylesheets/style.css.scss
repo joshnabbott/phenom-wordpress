@@ -26,6 +26,19 @@ header {
   input[type="text"] {
     margin-right: 5px;
   }
+
+  nav {
+    ul li {
+      float: left;
+      font-size: 14px;
+      line-height: 45px;
+      margin-right: 9px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
 }
 
 header, #content-top, #content-primary, footer {
@@ -36,11 +49,6 @@ header, #content-top, #content-primary, footer {
 
 footer {
   margin-bottom: 0;
-}
-
-nav span {
-  font-size: 14px;
-  line-height: 45px;
 }
 
 #content-top {

@@ -19,23 +19,14 @@
         <input type="submit" value="Search" class="btn" />
       </form>
 
-      <nav>
-        <span>/ <a href="">Home</a></span>
-        <span>/ <a href="">Team</a></span>
-        <span>/ <a href="">Shop</a></span>
-        <span>/ <a href="">About</a></span>
-        <span>/ <a href="">Videos</a></span>
         <?php
-          // wp_nav_menu(
-          //   array(
-          //     'theme_location'  => 'nav-1',
-          //     'container_id'    => 'navigation',
-          //     'container_class' => 'clear',
-          //     'menu_class'      => 'nav',
-          //     'depth'           => '2'
-          //     )
-          //   );
+          wp_nav_menu(array(
+            'theme_location'  => 'primary-nav',
+            'container'       => 'nav',
+            'container_class' => 'menu-{menu slug}-container',
+            'menu_class'      => 'menu unstyled',
+            'before'          => '/ ',
+          ));
         ?>
-      </nav>
-    </header><!-- End header -->
+    </header>
 
