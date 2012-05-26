@@ -1,36 +1,15 @@
 <?php if ( have_posts() ) : ?>
-  <?php while ( have_posts() ) : the_post(); ?>
-    <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-      <div class="post-header">
-        <h2 class="post-title">
-          <a href="<?php the_permalink(); ?>" rel="bookmark">
-            <?php the_title(); ?>
-          </a>
-        </h2>
-        <p><?php the_time( __( 'F jS, Y', 'phenom' ) ); ?></p>
-        <p><?php the_author(); ?></p>
+  <ul class="table">
+    <?php while ( have_posts() ) : the_post(); ?>
+      <li id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <h3 class="post-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
         <?php if ( has_post_thumbnail() ) { ?>
-          <a href="<?php the_permalink(); ?>">
-            <?php the_post_thumbnail(); ?>
-          </a>
+          <div class="thumbnail pull-left">
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+          </div>
         <?php } ?>
-      </div><!--end post-header-->
-      <div class="entry">
-        <?php the_content( __( 'Read more', 'phenom' )); ?>
-        <?php edit_post_link( __( 'Edit this', 'phenom' ), '<p>', '</p>' ); ?>
-      </div><!--end entry-->
-      <div class="post-footer">
-        <p><?php comments_popup_link( __( 'Leave a comment', 'phenom' ), __( '1 Comment', 'phenom' ), __( '% Comments', 'phenom' ) ); ?></p>
-      </div><!--end post-footer-->
-    </div><!--end post-->
-  <?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
-    <div class="pagination index">
-      <div class="alignleft">
-        <?php previous_posts_link( __( '&larr; Newer entries', 'phenom' )); ?>
-      </div>
-      <div class="alignright">
-        <?php next_posts_link( __( 'Older entries &rarr;', 'phenom' )); ?>
-      </div>
-    </div><!--end pagination-->
-  <?php else : ?>
+        <div><?php the_excerpt(); ?></div>
+      </li>
+    <?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
+  </ul>
 <?php endif; ?>

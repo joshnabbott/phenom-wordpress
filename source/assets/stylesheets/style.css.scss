@@ -1,9 +1,10 @@
 @import "bootstrap";
+@import "_bootstrap_overrides";
 @import "_fonts";
 
 body {
   background: url('images/bg-body.png');
-  color: #fff;
+  color: #cacaca;
   font-family: $proxima-nova-regular;
 }
 
@@ -21,6 +22,10 @@ header, #content-top, #content-primary, footer {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
   margin-bottom: 30px;
+}
+
+footer {
+  margin-bottom: 0;
 }
 
 nav span {
@@ -64,6 +69,7 @@ header {
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
       border-radius: 4px;
+      margin: 0 0 9px 0;
     }
   }
   .well {
@@ -73,6 +79,37 @@ header {
   h3 {
     color: #add946;
     font-family: $proxima-nova-semibold;
+    margin: 0 0 9px 0;
     text-transform: uppercase;
+  }
+
+  ul.table {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #999;
+    list-style: none;
+    margin: 0 0 9px 0;
+    padding: 0;
+
+    li {
+      border-bottom: 1px solid #999;
+      overflow: hidden;
+      padding: 5px;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+        color: #fff;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      h3 {
+        font-size: 110%;
+        text-transform: none;
+      }
+    }
   }
 }
