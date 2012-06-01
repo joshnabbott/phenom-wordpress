@@ -1,7 +1,14 @@
 <?php get_header(); ?>
 
     <section id="content-top" class="row-fluid">
-      home page slideshow
+      <div class="thumbnail span12 theme-default">
+        <div id="slider" class="nivoSlider">
+          <img src="<?php bloginfo('template_url'); ?>/images/slideshow-01.png" width="1210" height="475" />
+          <img src="<?php bloginfo('template_url'); ?>/images/slideshow-02.png" width="1210" height="475" />
+          <img src="<?php bloginfo('template_url'); ?>/images/slideshow-03.png" width="1210" height="475" />
+          <img src="<?php bloginfo('template_url'); ?>/images/slideshow-04.png" width="1210" height="475" />
+        </div>
+      </div>
     </section>
 
     <div id="content-primary" class="row-fluid">
