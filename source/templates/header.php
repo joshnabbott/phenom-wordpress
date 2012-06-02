@@ -14,9 +14,9 @@
     <header class="row-fluid">
       <h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 
-      <form action="/search" method="get" class=".form-search pull-right">
-        <input type="text" name="q" placeholder="search products" class="input-medium search-query" />
-        <input type="submit" value="Search" class="btn" />
+      <form action="/search" method="get" class="form-search pull-right">
+        <input type="text" name="q" placeholder="search products" class="input-medium search-query" disabled="disabled" />
+        <input type="submit" value="Search" class="btn" disabled="disabled" />
       </form>
 
         <?php

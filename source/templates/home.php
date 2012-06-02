@@ -3,9 +3,9 @@
     <section id="content-top" class="row-fluid slides">
       <div class="span12 slides_container">
         <div><img src="<?php bloginfo('template_url'); ?>/images/slideshow-01.png" width="1210" height="475" /></div>
+        <div><img src="<?php bloginfo('template_url'); ?>/images/slideshow-04.png" width="1210" height="475" /></div>
         <div><img src="<?php bloginfo('template_url'); ?>/images/slideshow-02.png" width="1210" height="475" /></div>
         <div><img src="<?php bloginfo('template_url'); ?>/images/slideshow-03.png" width="1210" height="475" /></div>
-        <div><img src="<?php bloginfo('template_url'); ?>/images/slideshow-04.png" width="1210" height="475" /></div>
       </div>
       <!--
         <a href="#" class="prev"><img src="<?php bloginfo('template_url'); ?>/images/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
@@ -14,7 +14,7 @@
     </section>
 
     <div id="content-primary" class="row-fluid">
-      <section class="row-fluid">
+      <section class="row-fluid hide">
         <div class="well span3">
           featured product or promo
         </div>
