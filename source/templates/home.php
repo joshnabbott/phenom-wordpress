@@ -1,14 +1,16 @@
 <?php get_header(); ?>
 
-    <section id="content-top" class="row-fluid">
-      <div class="thumbnail span12 theme-default">
-        <div id="slider" class="nivoSlider">
-          <img src="<?php bloginfo('template_url'); ?>/images/slideshow-01.png" width="1210" height="475" />
-          <img src="<?php bloginfo('template_url'); ?>/images/slideshow-02.png" width="1210" height="475" />
-          <img src="<?php bloginfo('template_url'); ?>/images/slideshow-03.png" width="1210" height="475" />
-          <img src="<?php bloginfo('template_url'); ?>/images/slideshow-04.png" width="1210" height="475" />
-        </div>
+    <section id="content-top" class="row-fluid slides">
+      <div class="span12 slides_container">
+        <div><img src="<?php bloginfo('template_url'); ?>/images/slideshow-01.png" width="1210" height="475" /></div>
+        <div><img src="<?php bloginfo('template_url'); ?>/images/slideshow-02.png" width="1210" height="475" /></div>
+        <div><img src="<?php bloginfo('template_url'); ?>/images/slideshow-03.png" width="1210" height="475" /></div>
+        <div><img src="<?php bloginfo('template_url'); ?>/images/slideshow-04.png" width="1210" height="475" /></div>
       </div>
+      <!--
+        <a href="#" class="prev"><img src="<?php bloginfo('template_url'); ?>/images/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+        <a href="#" class="next"><img src="<?php bloginfo('template_url'); ?>/images/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+      -->
     </section>
 
     <div id="content-primary" class="row-fluid">

@@ -1,13 +1,15 @@
 #= require 'bootstrap.min'
-#= require 'jquery.nivo.slider'
+#= require 'slides.jquery'
 
 $ ->
-  $('#slider').nivoSlider({
-    'effect': 'fade',
-    'directionNav': false,
-    'controlNav': false,
-    'pauseOnHover': false,
-    'slices': 1
+  $('.slides').slides({
+    preload: true,
+    'generatePagination': false,
+    pagination: false,
+    # preloadImage: 'wp-content/themes/phenom/images/loading.gif',
+    play: 5000,
+    pause: 2500,
+    hoverPause: true
   })
 
   # Coming soon functionality

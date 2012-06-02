@@ -1,6 +1,5 @@
 @import "bootstrap";
 @import "_bootstrap_overrides";
-@import "nivo-slider";
 @import "_fonts";
 
 body {
@@ -56,8 +55,41 @@ footer {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
-  padding: 0;
-  width: 1210px;
+
+  /* Slideshow div shouldn't have padding */
+  /* but should be the same width as the rest of the site */
+  &.slides {
+    padding: 0;
+    position: relative;
+    width: 1210px;
+
+    img {
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      border-radius: 7px;
+    }
+
+    .slides_container {
+      width: 1210px;
+      overflow: hidden;
+      position: relative;
+      z-index: 50;
+    }
+
+    .next, .prev {
+      position: absolute;
+      top: 206px;
+      left: -24px;
+      width: 24px;
+      height: 43px;
+      display: block;
+      z-index: 101;
+    }
+
+    .next {
+      left: 1210px;
+    }
+  }
 
   h3 {
     color: #add946;
