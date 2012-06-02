@@ -7,10 +7,8 @@
         <div><img src="<?php bloginfo('template_url'); ?>/images/slideshow-02.png" width="1210" height="475" /></div>
         <div><img src="<?php bloginfo('template_url'); ?>/images/slideshow-03.png" width="1210" height="475" /></div>
       </div>
-      <!--
-        <a href="#" class="prev"><img src="<?php bloginfo('template_url'); ?>/images/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
-        <a href="#" class="next"><img src="<?php bloginfo('template_url'); ?>/images/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
-      -->
+      <a href="#" class="prev">Previous</a>
+      <a href="#" class="next">Next</a>
     </section>
 
     <div id="content-primary" class="row-fluid">
