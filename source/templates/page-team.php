@@ -5,8 +5,8 @@
     </section>
 
     <div id="content-primary" class="row-fluid">
-      <div class="span12">
-        <div class="well span3">
+      <div class="row-fluid athletes">
+        <div class="well span3 athlete">
           <h3>Kenny Leverich</h3>
           <div class="thumbnail">
             <img src="<?php bloginfo('template_url'); ?>/images/team-kenny-leverich.png" width="222" height="222" />
@@ -72,7 +72,7 @@
             </dd>
           </dl>
         </div>
-        <div class="well span3">
+        <div class="well span3 athlete">
           <h3>Sean McChesney</h3>
           <div class="thumbnail">
             <img src="<?php bloginfo('template_url'); ?>/images/team-sean-mcchesney.png" width="222" height="222" />
@@ -124,7 +124,7 @@
             </dd>
           </dl>
         </div>
-        <div class="well span3">
+        <div class="well span3 athlete">
           <h3>Lauren Gibbs</h3>
           <div class="thumbnail">
             <img src="<?php bloginfo('template_url'); ?>/images/team-lauren-gibbs.png" width="222" height="222" />
@@ -156,7 +156,7 @@
             </dd>
           </dl>
         </div>
-        <div class="well span3">
+        <div class="well span3 athlete">
           <h3>Vince Kong</h3>
           <div class="thumbnail">
             <img src="<?php bloginfo('template_url'); ?>/images/team-vince-kong.png" width="222" height="222" />
@@ -204,8 +204,8 @@
           </dl>
         </div>
       </div>
-      <div class="row-fluid">
-        <div class="well span3">
+      <div class="row-fluid athletes">
+        <div class="well span3 athlete">
           <h3>Vanessa Reyes</h3>
           <div class="thumbnail">
             <img src="<?php bloginfo('template_url'); ?>/images/team-vanessa-reyes.png" width="222" height="222" />
@@ -255,7 +255,7 @@
             </dd>
           </dl>
         </div>
-        <div class="well span3">
+        <div class="well span3 athlete">
           <h3>Melissa Nelson</h3>
           <div class="thumbnail">
             <img src="<?php bloginfo('template_url'); ?>/images/team-melissa-nelson.png" width="222" height="222" />
