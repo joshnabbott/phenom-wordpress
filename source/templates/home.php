@@ -39,11 +39,11 @@
         <div class="span8">
           <div class="row-fluid">
             <section class="span6 featured-tile">
-              <a href="" class="coming-soon"><img src="<?php bloginfo('template_url'); ?>/images/shop-mens.png" height="300" width="374" /></a>
+              <a href="http://shop.phenom.fm/collections/mens"><img src="<?php bloginfo('template_url'); ?>/images/shop-mens.png" height="300" width="374" /></a>
             </section>
 
             <section class="span6 featured-tile">
-              <a href="" class="coming-soon"><img src="<?php bloginfo('template_url'); ?>/images/shop-womens.png" height="300" width="374" /></a>
+              <a href="http://shop.phenom.fm/collections/womens"><img src="<?php bloginfo('template_url'); ?>/images/shop-womens.png" height="300" width="374" /></a>
             </section>
           </div>
 
