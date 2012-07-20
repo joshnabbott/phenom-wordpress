@@ -47,7 +47,7 @@
             </section>
           </div>
 
-          <section class="row-fluid">
+          <section class="row-fluid hide">
             <h3>/ Events</h3>
             <ul class="table">
               <li>

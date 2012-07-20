@@ -5,6 +5,7 @@
   <!-- Basic Meta Data -->
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
 
+  <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favicon.png" type="image/x-icon" />
   <!-- WordPress -->
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   <?php wp_head(); ?>
