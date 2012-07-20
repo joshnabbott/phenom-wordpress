@@ -13,6 +13,8 @@
 <body <?php body_class(); ?>>
   <div id="primary-container" class="container">
     <header class="row-fluid">
+      <div id="social-icons"><img src="<?php bloginfo('template_url'); ?>/images/social-icons.png" alt="Find us on Facebook, Twitter, YouTube and Instagram" /></div>
+
       <h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 
       <form action="http://phenom.us5.list-manage2.com/subscribe/post" method="post" class="form-search pull-right">
