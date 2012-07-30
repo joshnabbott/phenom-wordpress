@@ -2,6 +2,9 @@
 #= require 'slides.jquery'
 
 $ ->
+  if backgroundDiv = $('#background-stretch')
+    $('#bg-slides li')
+
   $('.slides').slides({
     preload: true,
     'generatePagination': false,

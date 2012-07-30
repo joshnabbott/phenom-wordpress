@@ -11,6 +11,14 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+  <div id="background-stretch"></div>
+  <ul id="bg-slides" class="hide">
+    <li class="home" data-background-image="<?php bloginfo('template_url') ?>/images/background-01.jpg">Some title</li>
+    <li class="about" data-background-image="<?php bloginfo('template_url') ?>/images/background-02.jpg">Some title</li>
+    <li class="team" data-background-image="<?php bloginfo('template_url') ?>/images/background-03.jpg">Some title</li>
+    <li class="contact" data-background-image="<?php bloginfo('template_url') ?>/images/background-04.jpg">Some title</li>
+  </ul>
+
   <div id="primary-container" class="container">
     <header class="row-fluid">
       <div id="social-icons"><img src="<?php bloginfo('template_url'); ?>/images/social-icons.png" alt="Find us on Facebook, Twitter, YouTube and Instagram" /></div>

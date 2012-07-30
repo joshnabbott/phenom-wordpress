@@ -43,3 +43,14 @@ if ( ! function_exists( 'phenom_setup' ) ) :
   }
 
 endif; // phenom_setup
+
+add_filter('body_class', 'include_post_name_in_body_class');
+
+function include_post_name_in_body_class($classes) {
+  if(is_singular()) {
+    global $post;
+    array_push($classes, $post->post_name);
+  }
+  return $classes;
+}
+

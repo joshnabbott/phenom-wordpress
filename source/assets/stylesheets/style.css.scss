@@ -12,6 +12,19 @@ a:hover, a:active {
   color: #0099e6;
 }
 
+#background-stretch {
+  background: lime;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 header {
   position: relative;
 
