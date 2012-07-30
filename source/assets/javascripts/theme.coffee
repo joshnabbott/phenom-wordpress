@@ -2,8 +2,18 @@
 #= require 'slides.jquery'
 
 $ ->
-  if backgroundDiv = $('#background-stretch')
-    $('#bg-slides li')
+  $('#primary-container').hide()
+
+  if $bgDiv = $('#background-stretch')
+    $bgDiv.hide()
+    pageId = $('body').attr('id')
+    if $li = $("li[data-page='#{pageId}']")
+      $bgDiv.find('img').attr('src', $li.data('background-image'))
+    $bgDiv.fadeIn 'slow', ->
+      $('#primary-container').fadeIn 'medium'
+  else
+    $('#primary-container').fadeIn 'fast'
+
 
   $('.slides').slides({
     preload: true,

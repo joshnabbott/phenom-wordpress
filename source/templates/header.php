@@ -10,13 +10,13 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
-  <div id="background-stretch"></div>
+  <body <?php body_class(); ?> id="<?php echo $post->post_name; ?>">
+  <div id="background-stretch"><img src="" /></div>
   <ul id="bg-slides" class="hide">
-    <li class="home" data-background-image="<?php bloginfo('template_url') ?>/images/background-01.jpg">Some title</li>
-    <li class="about" data-background-image="<?php bloginfo('template_url') ?>/images/background-02.jpg">Some title</li>
-    <li class="team" data-background-image="<?php bloginfo('template_url') ?>/images/background-03.jpg">Some title</li>
-    <li class="contact" data-background-image="<?php bloginfo('template_url') ?>/images/background-04.jpg">Some title</li>
+    <li data-page="home" data-background-image="<?php bloginfo('template_url') ?>/images/background-01.jpg">Some title.</li>
+    <li data-page="about" data-background-image="<?php bloginfo('template_url') ?>/images/background-02.jpg">Some title.</li>
+    <li data-page="team" data-background-image="<?php bloginfo('template_url') ?>/images/background-03.jpg">Some title.</li>
+    <li data-page="contact" data-background-image="<?php bloginfo('template_url') ?>/images/background-04.jpg">Some title.</li>
   </ul>
 
   <div id="primary-container" class="container">
