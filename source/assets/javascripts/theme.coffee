@@ -1,18 +1,20 @@
 #= require 'bootstrap'
 #= require 'slides.jquery'
 
-$ ->
-  $('#primary-container').hide()
+jQuery.fn.exists = ->
+  @length > 0
 
-  if $bgDiv = $('#background-stretch')
+$ ->
+  if $('#background-stretch').exists()
+    $bgDiv = $('#background-stretch')
     $bgDiv.hide()
     pageId = $('body').attr('id')
-    if $li = $("li[data-page='#{pageId}']")
+    if $("li[data-page='#{pageId}']").exists()
+      $li = $("li[data-page='#{pageId}']")
+      $('#primary-container').hide()
       $bgDiv.find('img').attr('src', $li.data('background-image'))
-    $bgDiv.fadeIn 'slow', ->
-      $('#primary-container').fadeIn 'medium'
-  else
-    $('#primary-container').fadeIn 'fast'
+      $bgDiv.fadeIn 'slow', ->
+        $('#primary-container').fadeIn 'medium'
 
 
   $('.slides').slides({
