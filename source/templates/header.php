@@ -13,10 +13,11 @@
   <body <?php body_class(); ?> id="<?php echo $post->post_name; ?>">
   <div id="background-stretch"><img src="" /></div>
   <ul id="bg-slides" class="hide">
-    <li data-page="home" data-background-image="<?php bloginfo('template_url') ?>/images/background-01.jpg">Some title.</li>
+    <li data-page="videos" data-background-image="<?php bloginfo('template_url') ?>/images/background-01.jpg">Some title.</li>
     <li data-page="about" data-background-image="<?php bloginfo('template_url') ?>/images/background-02.jpg">Some title.</li>
     <li data-page="team" data-background-image="<?php bloginfo('template_url') ?>/images/background-03.jpg">Some title.</li>
     <li data-page="contact" data-background-image="<?php bloginfo('template_url') ?>/images/background-04.jpg">Some title.</li>
+    <li data-page="events" data-background-image="<?php bloginfo('template_url') ?>/images/background-05.jpg">Some title.</li>
   </ul>
 
   <div id="primary-container" class="container">
